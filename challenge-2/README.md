@@ -1,18 +1,17 @@
 # Asunto: Estamos encima del 502 — te comparto diagnóstico apenas lo tenga
 
-Hola [Nombre],
+Hola Cliente Furioso,
 
-Gracias por avisar y entiendo la urgencia (más aún en plena campaña). Ya estoy revisando el servidor para identificar la causa del 502 intermitente.
+Recibido. Ya estamos al tanto del error 502 intermitente en el checkout y lo estamos tratando como prioridad máxima, especialmente por el impacto en campaña.
 
-Normalmente, este error aparece cuando el servidor web (Nginx/Apache) no logra comunicarse a tiempo con el backend que procesa PHP (PHP-FPM/Apache), o cuando hay saturación de recursos en momentos de pico.
+Ahora mismo estoy revisando el servidor para identificar la causa (logs y estado del servicio) y confirmar si el problema es del hosting/backend o de alguna dependencia externa.
 
-## Acciones actuales:
-- Revisar logs del gateway y del backend (Nginx/Apache y PHP-FPM)
-- Comprobar estado de servicios y recursos (CPU/RAM/IO)
-- Aislar si el fallo viene de la aplicación (WordPress/plugins/checkout), de infraestructura o del proveedor/pasarela.
+Mientras avanzamos con el diagnóstico, para no frenar ventas, vamos a habilitar una medida de contención: aviso en el checkout + canal alternativo de soporte (WhatsApp) para asistir a quienes no logren completar el pago.
 
-La prioridad es estabilizar el checkout para que puedan seguir cobrando sin fricción. En cuanto tenga el primer diagnóstico (causa probable + siguiente acción), te escribo con el detalle y los pasos a seguir.
+Te envío un primer update apenas tenga el diagnóstico inicial y el siguiente paso concreto (y si hace falta escalar a proveedor/servicio de pago, lo hacemos de inmediato).
 
+Saludos,
+Neoh
 ---
 
 ## Comandos iniciales (diagnóstico) + qué busco
