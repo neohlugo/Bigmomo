@@ -24,6 +24,9 @@ En SEO, no hay "penalización por plugin", pero sí por Core Web Vitals/UX: pág
 - Imágenes con tamaño definido para evitar saltos.
 - Lazy-load en las imágenes no críticas.
 
+### Esqueleto HTML de una tarjeta (DOM) + enfoque CSS
+
+```html
 <!-- Una slide de Swiper (solo estructura DOM, sin JS) -->
 <div class="swiper-slide">
   <article class="tcard" aria-label="Testimonio">
@@ -38,10 +41,12 @@ En SEO, no hay "penalización por plugin", pero sí por Core Web Vitals/UX: pág
         decoding="async"
       />
     </figure>
+
     <div class="tcard__content">
       <blockquote class="tcard__quote">
         “Implementamos la tienda en 3 semanas y mejoró la conversión sin afectar performance.”
       </blockquote>
+
       <footer class="tcard__footer">
         <p class="tcard__name">Ana Pérez</p>
         <p class="tcard__role">CMO, Marca X</p>
@@ -49,6 +54,7 @@ En SEO, no hay "penalización por plugin", pero sí por Core Web Vitals/UX: pág
     </div>
   </article>
 </div>
+```
 
 ## Enfoque CSS (breve)
 describiría usando BEM + Flexbox para la tarjeta:
