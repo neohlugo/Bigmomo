@@ -8,16 +8,16 @@ La idea principal es simple: **la publicación jamás debe depender del CRM**. S
 
 ## Qué resuelve (requisitos del challenge)
 
-- ✅ Detecta **primera publicación** (no actualizaciones) usando el hook correcto (`transition_post_status`)
-- ✅ Extrae la **Meta Description** desde:
+- Detecta **primera publicación** (no actualizaciones) usando el hook correcto (`transition_post_status`)
+- Extrae la **Meta Description** desde:
   - Yoast: `_yoast_wpseo_metadesc` / `WPSEO_Meta::get_value()`
   - RankMath: `rank_math_description` / `RankMath\Helper::get_post_meta()`
   - Fallback: excerpt / contenido recortado
-- ✅ Envía un **POST** a `https://api.fake-crm.com/v1/alert`
-- ✅ No bloquea el editor: el envío ocurre **asíncrono** (WP-Cron)
-- ✅ Timeout estricto: **3s**
-- ✅ Si falla, registra el error en `crm-errors.log` dentro del plugin
-- ✅ Evita duplicados marcando `_crm_alert_sent`
+- Envía un **POST** a `https://api.fake-crm.com/v1/alert`
+- No bloquea el editor: el envío ocurre **asíncrono** (WP-Cron)
+- Timeout estricto: **3s**
+- Si falla, registra el error en `crm-errors.log` dentro del plugin
+- Evita duplicados marcando `_crm_alert_sent`
 
 ---
 
